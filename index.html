@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/icon.png" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="main__registration_img">
+            <img src="assets/registrationl.png" alt="" />
+        </div>
+        <div class="main__registration__form">
+            <h1>REGISTER</h1>
+            <form action="#form" target="_self" id="form">
+                <label for="username">Username</label><br />
+                <input type="text" placeholder="bitterman" id="username" /><br />
+                <label for="email">Email</label><br />
+                <input type="email" id="email" placeholder="bitterman@gmail.com"  /><br />
+                <label for="pwd">Password</label><br />
+                <input type="password" name="password" id="pwd" placeholder="Password"  /><br />
+                <input type="submit" value="Register" id="register" /><br />
+            </form>
+            <p id="warning"></p>
+            <p id="main__registration__form_alternate">or sign up with</p>
+            <div class="accounts">
+                <button class="accounts__google">
+                    <img src="/login/assets/google.png" alt="google" />
+                    Google
+                </button>
+                <button class="accounts__facebook">
+                    <img src="/login/assets/facebook.webp" alt="facebook" />
+                    Facebook
+                </button>
+            </div>
+            <p class="register">
+                Already have an account?
+                <a href="/login/index.html" target="_blank">Log in</a>
+            </p>
+        </div>
+        <div id="successful">
+            <img src="assets/tickmark.png" />
+            <h2>
+                Registration Successful
+            </h2>
+            <a href="/login/index.html" target="_blank"><button id="registrationsuccess">Login</button></a>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

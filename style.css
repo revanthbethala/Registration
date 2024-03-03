@@ -1,0 +1,217 @@
+* {
+    font-family: Inter, "sans-serif", arial, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: linear-gradient(to bottom left, rgb(245, 223, 182), rgb(210, 163, 76));
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: hsla(68, 24%, 81%, 0.925);
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+main .main__registration_img {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    color: orangered;
+}
+
+main .main__registration_img img {
+    width: 550px;
+    height: 550px;
+}
+
+.main__registration__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    width: 320px;
+    cursor: text;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    margin: 15px 0;
+    padding: 0 10px;
+    background-color: #ececec;
+    border-radius: 8px;
+}
+
+#register {
+    width: 100%;
+    cursor: pointer;
+    padding: 6px 0;
+    margin-top: 10px;
+    font-size: 19px;
+    background: linear-gradient(to left top, rgb(198, 114, 17), rgba(228, 157, 56, 0.856));
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+input:hover {
+    border: 1px solid black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main__registration__form_alternate {
+    color: gray;
+}
+
+.accounts {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.accounts button {
+    cursor: pointer;
+    height: 40px;
+    padding: 25px 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgba(255, 166, 0, 0.941);
+    background: white;
+    border: 1px solid rgb(54, 53, 53);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.accounts button:hover {
+    background-color: #e9e6e1;
+}
+
+.accounts img {
+    width: 30px;
+    height: 30px;
+}
+
+
+#warning {
+    width: 20rem;
+    font-size: 17px;
+    color: red;
+}
+
+#successful {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    border: none;
+    display: none;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#successful img {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#successful h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: green;
+    margin: 1rem 0;
+}
+
+#successful a button {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: rgb(0, 122, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+    @media screen and (max-width:490px) {
+        main {
+            display: flex;
+            flex-direction: column;
+            background: none;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+
+        main .main__registration_img img {
+            display: none;
+        }
+
+        .accounts img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .accounts button {
+            height: 10px;
+        }
+        #successful{
+            width: 60%;
+        }
+    }
